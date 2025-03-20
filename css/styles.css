@@ -1,0 +1,89 @@
+:root {
+    --color-1: #6295a6;
+    --color-2: #8faac9;
+    --color-3: #b4acdd;
+    --color-4: #d7b9d5;
+    --color-5: #ffdbee;
+    --background-gradient-all: linear-gradient(to bottom right, #6295a6, #8faac9, #b4acdd, #d7b9d5, #ffdbee);
+    --background-gradient-all-reverse: linear-gradient(to bottom right, #ffdbee, #d7b9d5, #b4acdd, #8faac9, #6295a6);
+}
+
+@font-face {
+    font-family: 'TimeBurner';
+    src: url('../assets/fonts/Timeburner-xJB8.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Stelove';
+    src: url('../assets/fonts/Stelove-ZV9nB.ttf') format('truetype');
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: var(--background-gradient-all);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--color-1);
+    font-family: 'TimeBurner', sans-serif;
+}
+
+p {
+    font-family: 'Stelove', sans-serif;
+}
+
+.carousel {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px !important;
+}
+
+.carousel .carousel-item {
+    height: 400px;
+}
+
+.carousel .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.col-md-6 {
+    height: 400px !important;
+    max-height: 400px !important;
+    overflow-y: auto !important;
+}
+
+.bordered-text {
+    border: 2px solid var(--color-1);
+    padding: 10px;
+    border-radius: 5px;
+    background-color: var(--color-3);
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+footer {
+    background-color: var(--color-1);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 2.5rem;
+    font-family: 'TimeBurner', sans-serif;
+}
