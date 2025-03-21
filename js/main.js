@@ -1,5 +1,5 @@
 window.addEventListener('load', function () {
-    var song = new Audio('./assets/audio/videoplayback.m4a');
+    var song = new Audio('./assets/audio/videoplayback.mp3');
     song.volume = 0.3;
 
     var playButton = document.getElementById('play-button');
