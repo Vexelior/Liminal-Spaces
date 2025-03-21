@@ -13,10 +13,14 @@
 </head>
 
 <body>
+    <div id="snowflake-container"></div>
+    <button id="to-top" class="btn btn-primary" title="Back to top">
+        <span class="material-symbols-outlined">^</span>
+    </button>
     <header>
         <h1 class="text-center mt-3"><u>Liminal Spaces</u></h1>
     </header>
-    <div class="container mt-2">
+    <div class="container mt-2 mb-4">
         <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -47,8 +51,8 @@
             </button>
         </div>
         <main>
-            <div class="row">
-                <div class="col-md-6">
+            <div class="row mt-3">
+                <div class="col">
                     <section class="bordered-text">
                         <h2 class="text-center">What are Liminal Spaces?</h2>
                         <p>
@@ -70,32 +74,120 @@
                         </p>
                     </section>
                 </div>
+            </div>
+            <div class="row two-col-md-6">
                 <div class="col-md-6">
                     <section class="bordered-text">
-                        <h2 class="text-center">Explore the Collection</h2>
+                        <h2 class="text-center">Nostalgia and Liminal Spaces</h2>
                         <p>
-                            Our collection of liminal spaces captures the essence of these transitional moments. Each
-                            image
-                            invites you to step into a world that exists between reality and imagination, where the
-                            familiar
-                            becomes strange and the ordinary becomes extraordinary.
+                            For many, especially those born in the eighties and nineties, liminal spaces evoke a deep
+                            sense of
+                            nostalgia.
+                            These spaces remind us of simpler times, when life felt less complicated and more magical.
                         </p>
                         <p>
-                            Browse through our gallery to experience the beauty and mystery of liminal spaces. Let
-                            yourself
-                            be transported to places that evoke a sense of wonder and contemplation.
+                            In today's fast-paced world, where technology often overshadows genuine human experiences,
+                            we find
+                            ourselves yearning for the past. Liminal spaces serve as a bridge to our memories, allowing
+                            us
+                            to
+                            reconnect with our youth and the feelings of wonder and possibility that once defined our
+                            lives.
                         </p>
+                    </section>
+                </div>
+                <div class="col-md-6">
+                    <section class="bordered-text">
+                        <h2 class="text-center">The Eerie Beauty of Liminal Spaces</h2>
+                        <p>
+                            While liminal spaces can evoke feelings of nostalgia, they can also be unsettling. The
+                            emptiness
+                            and stillness of these spaces can create a sense of unease, making us question what lies
+                            beyond
+                            the
+                            threshold.
+                        </p>
+                        <p>
+                            This eerie beauty is part of what makes liminal spaces so captivating. They challenge our
+                            perceptions
+                            and invite us to explore the unknown, reminding us that life is often a series of
+                            transitions,
+                            each
+                            with its own unique beauty and complexity.
+                        </p>
+                    </section>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <section class="bordered-text">
+                        <h2 class="text-center">What is so fascinating about Liminal Spaces?</h2>
+                        <p>
+                            The allure of liminal spaces lies in their ability to evoke a sense of nostalgia and
+                            introspection.
+                            They remind us of moments in our lives when we felt suspended between two worlds, whether it
+                            was
+                            during a significant life change or simply in the quiet solitude of an empty room.
+                        </p>
+                        <p>
+                            In a world that often feels chaotic and fast-paced, liminal spaces offer a moment of pause,
+                            reflection,
+                            and contemplation. They invite us to explore the beauty in the mundane and to find meaning
+                            in
+                            the
+                            spaces we often overlook.
+                        </p>
+                    </section>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <section class="bordered-text">
+                        <h2 class="text-center">Featured Video</h2>
+                        <p class="text-center">
+                            Experience the essence of liminal spaces through our curated video selection. Each video
+                            captures
+                            the beauty and eeriness of these transitional moments, inviting you to reflect on your own
+                            experiences.
+                        </p>
+                    </section>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="video-frame text-center">
+                        <span class="text-muted" style="font-size: 1em;">Video Source:
+                            <a href="https://www.youtube.com/channel/UCLp9767ti0Y0kjKQXay5HRg" target="_blank">
+                                utopic.dreamer
+                            </a>
+                        </span>
+                        <video id="featured-video" src="./assets/audio/videoplayback.mp4" controls>
+                            Your browser does not support the video tag.
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <section class="bordered-text">
+                        <h2 class="text-center">Learn More</h2>
+                        <p>
+                            To delve deeper into the world of liminal spaces, explore our curated collection of
+                            articles,
+                            videos,
+                            and images that capture the essence of these unique environments. Discover how they shape
+                            our
+                            perceptions and influence our emotions.
+                        </p>
+                        <div class="text-center">
+                            <button class="m-auto" id="learn-more-button">Explore</button>
+                        </div>
                     </section>
                 </div>
             </div>
         </main>
     </div>
-    </main>
-    </div>
-    <footer>
-        <div class="d-flex justify-content-center align-items-center">
-            &copy; <span class="ms-1 me-1" id="currentYear"></span> Liminal Spaces. All rights reserved.
-        </div>
+    <footer class="text-center">
+        Built with ❤️ by Alex Sanderson
     </footer>
 </body>
 <script src="./js/main.js"></script>
