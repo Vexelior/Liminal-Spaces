@@ -1,16 +1,20 @@
 window.addEventListener('load', function () {
     var song = new Audio('./assets/audio/videoplayback.m4a');
     song.volume = 0.3;
-    if (song) {
-        song.play();
-    }
-    var video = document.getElementById('featured-video');
-    video.addEventListener('play', function () {
-        song.pause();
+
+    var playButton = document.getElementById('play-button');
+    playButton.addEventListener('click', function () {
+        if (song.paused) {
+            song.play().catch(function (error) {
+                console.log('Audio play failed:', error);
+            });
+            playButton.innerHTML = 'Pause Audio';
+        } else {
+            song.pause();
+            playButton.innerHTML = 'Play Audio';
+        }
     });
-    video.addEventListener('pause', function () {
-        song.play();
-    });
+
     var snowflakeContainer = document.getElementById('snowflake-container');
     for (var i = 0; i < 100; i++) {
         var snowflake = document.createElement('div');
@@ -27,10 +31,12 @@ window.addEventListener('load', function () {
         snowflake.style.transform = 'rotate(' + randomRotation + 'deg)';
         snowflakeContainer.appendChild(snowflake);
     }
+
     var learnMoreButton = document.getElementById('learn-more-button');
     learnMoreButton.addEventListener('click', function () {
         window.open('https://aesthetics.fandom.com/wiki/Liminal_Space', '_blank');
     });
+
     var rows = document.querySelectorAll('.row');
     for (var i = 0; i < rows.length; i++) {
         var col = rows[i].querySelectorAll('.col-md-6');
@@ -49,16 +55,16 @@ window.addEventListener('load', function () {
             for (var j = 0; j < col.length; j++) {
                 col[j].style.height = maxHeight + 'px';
             }
-        }
-        else if (col.length === 1) {
+        } else if (col.length === 1) {
             col[0].style.height = 'auto';
         }
     }
+
     var to_top_button = document.getElementById('to-top');
     to_top_button.addEventListener('click', function () {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
-    //show when scrolling down
+
     window.addEventListener('scroll', function () {
         if (window.scrollY > 200) {
             to_top_button.style.display = 'block';
@@ -67,5 +73,3 @@ window.addEventListener('load', function () {
         }
     });
 });
-
-
